@@ -1,0 +1,14 @@
+---
+layout: default
+title: My Coding Test Blog
+---
+<h1>안녕하세요! SonMyungJi의 코딩테스트 블로그입니다.</h1>
+<p>LeetCode에서 자동으로 동기화된 글들이 아래 목록에 나타납니다.</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+  {% endfor %}
+</ul>
